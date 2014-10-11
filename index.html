@@ -18,6 +18,8 @@
 			</ul>
 		</div>
 	</nav>
+	<section id="wallpaper">
+	</section>
 	<section id="home">
 		<div class="contenedor">
 			<h2>Mi nombre es Noel Escobedo y soy front-end developer.</h2>
@@ -30,7 +32,7 @@
 				<br>
 				<br>
 				<ul>
-					<li>Si quieres conocerme un poco más puedes leer mi Bio.</li>
+					<li>Si quieres conocerme un poco más puedes leer mi Biografía.</li>
 					<li>Si te interesa ver que puedo llegar a hacer, échale un ojo a mis Servicios</li>
 					<li>Visita mi Portfolio si lo que prefieres ver son mis últimos proyectos.</li>
 					<li>También puedes probar a decirme Hola si te apetece.</li>
@@ -230,9 +232,10 @@
 				<p>Rellena el formulario y en breve recibirás tu respuesta. </p>
 				<div class="separador"></div>
 				<input type="text" placeholder="   Nombre" name="nombre">
-				<input type="text" placeholder="   E-mail" name="email">
-				<input type="text" placeholder="   Teléfono" name="telefono">
+				<input type="email" placeholder="   E-mail" name="email">
+				<input type="tel" placeholder="   Teléfono" name="telefono">
 				<textarea name="mensaje" id="" rows="10" placeholder="  Mensaje"></textarea>
+				<button class="boton">Contactar</button>
 			</form>
 
 			<div class="contacto-col2">
@@ -254,5 +257,37 @@
 			</div>
 		</div>
 	</section>
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script>
+		$(document).on('ready', function(){
+			/* ---- Efectos para posicionarse ---- */
+	        var lastId;
+	        var topMenu = $(".menu");
+	        var topMenuHeight = $('.menu').outerHeight(true);
+	        // Lista de items del menu
+	        var menuItems = topMenu.find("a"),
+	            // Anchors correspondientes a items del menu
+	            scrollItems = menuItems.map(function () {
+	                var item = $($(this).attr("href"));
+	                if (item.length) {
+	                    return item;
+	                }
+	            });
+
+	        // vigila evento click de los items del menu
+	        // así obtenemos un chido efecto animado de scroll
+	        menuItems.click(function (e) {
+	            e.preventDefault();
+	            var href = $(this).attr("href"),
+	                offsetTop = href === "#" ? 0 : $(href).offset().top - topMenuHeight + 1;
+
+	            $('html, body').stop().animate({
+	                scrollTop: offsetTop
+	            }, 400);
+	        });
+
+		});
+    </script>
 </body>
 </html>

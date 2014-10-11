@@ -72,6 +72,18 @@ h3{
 	font-size: 28px;
 }
 
+#wallpaper{
+	/*background: url(../imagenes/fondo1.jpg) no-repeat center center;*/
+	background-image: url(../imagenes/fondo1.jpg);
+	background-repeat: no-repeat;
+	background-position: center center;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	height: 400px;
+}
+
 .contenedor{
 	max-width: 1024px;
 	margin:auto;
@@ -139,7 +151,7 @@ section ul li{
 }
 
 #home{
-	background-color: #F1F1F1;
+	background-color: #F5F6F7;
 	min-height:400px;
 }
 
@@ -169,7 +181,7 @@ section ul li{
 }
 
 #servicios{
-	background:#F1F1F1;
+	background:#F5F6F7;
 }
 
 #portafolio .proyecto{
@@ -186,16 +198,22 @@ section ul li{
 }
 
 #portafolio .proyecto .imagen{
-	height:180px;
 	overflow:hidden;
-	border-bottom:4px solid #CCC;
 	cursor: pointer;
 	margin: 4px;
 }
 
 #portafolio .proyecto .imagen img{
 	width:80%;
-	border:4px solid #CCC;
+	background-color: #CCC;
+	padding:6px;
+	transition: background-color .4s ease-in;
+	border: 1px solid #CCC;
+	/*border:5px solid #CCC;*/
+}
+#portafolio .proyecto .imagen img:hover{
+	background-color: #FFF;
+	border: 1px solid gray;
 }
 
 #portafolio .proyecto .descripcion{
@@ -232,7 +250,9 @@ form.contacto{
 	text-align: justify;
 }
 
-.contacto input[type="text"], 
+.contacto input[type="text"],
+.contacto input[type="tel"],
+.contacto input[type="email"], 
 .contacto textarea {
 	display:block;
 	background: #FFF;
@@ -242,8 +262,23 @@ form.contacto{
 	margin-bottom: 10px;
 }
 
-.contacto input[type="text"]{
+.contacto input[type="text"],
+.contacto input[type="tel"],
+.contacto input[type="email"]{
 	height: 30px;
+}
+
+.contacto .boton{
+	border-top: none;
+	border-right: none;
+	border-left: none;
+	border-bottom: 4px solid #238F7A;
+	margin-bottom: 20px;
+	background-color: #1ABC9C;
+	color: #FFF;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	border-radius: 5px;
 }
 
 .separador {
