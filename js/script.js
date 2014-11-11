@@ -25,4 +25,9 @@ $(document).on('ready', function(){
         }, 400);
     });
 
+    $(".habilidad").each(function(){
+        var porcentaje = $(this).find(".barra").data("valor");
+        $(this).find(".barra").css("width", porcentaje + "%");
+    });
+
 });
