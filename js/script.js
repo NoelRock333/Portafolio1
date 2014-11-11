@@ -26,8 +26,9 @@ $(document).on('ready', function(){
 
 /* ---- Creador de barras de habilidad ---- */
     $(".habilidad").each(function(){
-        var porcentaje = $(this).find(".barra").data("valor");
-        $(this).find(".barra").css("width", porcentaje + "%");
+        $(this).append('<div class="barra"></div>'); // Agregamos un nuevo elemento HTML
+        var porcentaje = $(this).data("valor"); // Obtenemos el valor de la propiedad 'data-valor'
+        $(this).find(".barra").css("width", porcentaje + "%"); // Asignamos tamaño de la barra con CSS in line
     });
 /* ---- FIN Creador de barras de habilidad  ---- */
 
