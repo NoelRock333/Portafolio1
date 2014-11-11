@@ -5,10 +5,11 @@
 	<title>Portafolio</title>
 	<link rel="stylesheet" type="text/css" href="css/estilo.css">
 	<link rel="stylesheet" type="text/css" href="css/font-awesome.css">
+	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 </head>
 <body>
 	<nav class="nav">
-		<div class="contenedor">
+		<div class="container">
 			<ul class="menu">
 				<li><a href="#home"><i class="fa fa-home"></i></a></li>
 				<li><a href="#sobre-mi">Sobre mi</a></li>
@@ -21,7 +22,7 @@
 	<section id="wallpaper">
 	</section>
 	<section id="home">
-		<div class="contenedor">
+		<div class="container">
 			<h2>Mi nombre es Noel Escobedo y soy front-end developer.</h2>
 			<div class="imagenes">
 				<img id="foto-perfil" src="imagenes/P1080106_Perfil.JPG">
@@ -42,7 +43,7 @@
 		</div>
 	</section>
 	<section id="sobre-mi">
-		<div class="contenedor">
+		<div class="container">
 			<h2>Sobre mi</h2>
 
 			<div>
@@ -55,78 +56,82 @@
 				<br>
 			</div>
 
-			<div class="col-50">
-				<h3>Mis habilidades</h3>
-				<br>
-				<label>HTML-CSS</label>
-				<div class="habilidad">
-					<div class="barra" style="width:100%;"></div>
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Mis habilidades</h3>
+					<br>
+					<label>HTML-CSS</label>
+					<div class="habilidad">
+						<div class="barra" style="width:100%;"></div>
+					</div>
+
+					<label>Node.js</label>
+					<div class="habilidad">
+						<div class="barra" style="width:50%;"></div>
+					</div>
+
+					<label>Photoshop</label>
+					<div class="habilidad">
+						<div class="barra" style="width:20%;"></div>
+					</div>
+
+					<label>jQuery</label>
+					<div class="habilidad">
+						<div class="barra" style="width:80%;"></div>
+					</div>
+
+					<label>Angular.js</label>
+					<div class="habilidad">
+						<div class="barra" style="width:50%;"></div>
+					</div>
+
+					<label>C#</label>
+					<div class="habilidad">
+						<div class="barra" style="width:70%;"></div>
+					</div>
 				</div>
 
-				<label>Node.js</label>
-				<div class="habilidad">
-					<div class="barra" style="width:50%;"></div>
+				<div class="col-sm-6">
+					<h3>En que ando metido</h3>
+					<br>
+					<p>Aquí les dejo una lista de lo que pretendo hacer aún mejor en poco tiempo:</p>
+					<br>
+					<ul>
+						<li>Ser en un auténtico jQuery Ninja</li>
+						<li>User Experience and Interface (UX-UI)</li>
+						<li>Mejorar mi nivel de inglés</li>
+						<li>Profundizar en todo lo que se refiere al fantástico mundo Node.js</li>
+						<li>Customización de Google Analytics</li>
+						<li>Total compatibilidad entre navegadores (Cross Browser Design)</li>
+						<li>Preparar mi propio Pie de queso</li>
+					</ul>
 				</div>
-
-				<label>Photoshop</label>
-				<div class="habilidad">
-					<div class="barra" style="width:20%;"></div>
-				</div>
-
-				<label>jQuery</label>
-				<div class="habilidad">
-					<div class="barra" style="width:80%;"></div>
-				</div>
-
-				<label>Angular.js</label>
-				<div class="habilidad">
-					<div class="barra" style="width:50%;"></div>
-				</div>
-
-				<label>C#</label>
-				<div class="habilidad">
-					<div class="barra" style="width:70%;"></div>
-				</div>
-			</div>
-
-			<div class="col-50 lpadd20">
-				<h3>En que ando metido</h3>
-				<br>
-				<p>Aquí les dejo una lista de lo que pretendo hacer aún mejor en poco tiempo:</p>
-				<br>
-				<ul>
-					<li>Ser en un auténtico jQuery Ninja</li>
-					<li>User Experience and Interface (UX-UI)</li>
-					<li>Mejorar mi nivel de inglés</li>
-					<li>Profundizar en todo lo que se refiere al fantástico mundo Node.js</li>
-					<li>Customización de Google Analytics</li>
-					<li>Total compatibilidad entre navegadores (Cross Browser Design)</li>
-					<li>Preparar mi propio Pie de queso</li>
-				</ul>
 			</div>
 
 			<br>
 			<br>
-
-			<div class="col-50">
-				<h3>Información adicional</h3>
-				<br>
-				<p>Estos son otros datos de interés general un tanto menos técnicos:</p>
-				<ul>
-					<li>Me gusta el picante</li>
-					<li>Mi primer computadora tenia windows 98</li>
-					<li>Me agrada lo minimalista</li>
-					<li>No necesito café para funcionar</li>
-					<li>Me gusta hacer deporte con amigos</li>
-					<li>Soy un amante de la buena música</li>
-					<li>Mi proposito de año nuevo fue aprender a tocar la guitarra</li>
-				</ul>
+			
+			<div class="row">
+				<div class="col-sm-6">
+					<h3>Información adicional</h3>
+					<br>
+					<p>Estos son otros datos de interés general un tanto menos técnicos:</p>
+					<ul>
+						<li>Me gusta el picante</li>
+						<li>Mi primer computadora tenia windows 98</li>
+						<li>Me agrada lo minimalista</li>
+						<li>No necesito café para funcionar</li>
+						<li>Me gusta hacer deporte con amigos</li>
+						<li>Soy un amante de la buena música</li>
+						<li>Mi proposito de año nuevo fue aprender a tocar la guitarra</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 		<br>
 	</section>
 	<section id="servicios">
-		<div class="contenedor">
+		<div class="container">
 			<h2>Servicios</h2>
 			<br>
 			<div class="col-33 servicio">
@@ -149,7 +154,7 @@
 		</div>
 	</section>
 	<section id="portafolio">
-		<div class="contenedor">
+		<div class="container">
 			<h2>Portafolio</h2>
 			<br>
 			<div class="proyecto">
@@ -221,7 +226,7 @@
 		</div>
 	</section>
 	<section id="contacto">
-		<div class="contenedor">
+		<div class="container">
 			<h2>Contacto</h2>
 			<br>
 			<form acction="/" method="POST" class="contacto">
