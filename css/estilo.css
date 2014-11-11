@@ -49,9 +49,10 @@ nav ul.menu li a:active{
 	background: #09F;
 	height:30px;
 	padding:10px;
+	color:white;
 }
 
-a{
+nav ul.menu a{
 	color:white;
 }
 
@@ -62,12 +63,12 @@ section{
 	overflow: hidden;
 }
 
-h2{
+body h2{
 	font-family: "OswaldBold", Arial;
 	font-size: 40px;
 }
 
-h3{
+body h3{
 	font-family: "OswaldBold", Arial;
 	font-size: 28px;
 }
@@ -260,6 +261,7 @@ form.contacto{
 	padding: 5px 5px 5px 20px;
 	width:100%;
 	margin-bottom: 10px;
+	box-sizing: content-box;
 }
 
 .contacto input[type="text"],
