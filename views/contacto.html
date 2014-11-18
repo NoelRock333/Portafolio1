@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+	{% if guardado %}
+		<div class="success">
+			Se ha guardado correctamente
+		</div>
+	{% else %}
+		<div class="error">
+			Error al guardar
+		</div>
+	{% endif %}
+	<br>
+	<a href="/" class="btn-regresar">&lt; Regresar</a>
+</body>
+</html>
