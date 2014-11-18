@@ -1,0 +1,16 @@
+{
+  "name": "Portafolio1",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "body-parser": "~1.6.6",
+    "debug": "~1.0.4",
+    "express": "~4.8.6",
+    "morgan": "~1.2.3",
+    "serve-favicon": "~2.0.1",
+    "swig": "^1.4.2"
+  }
+}
