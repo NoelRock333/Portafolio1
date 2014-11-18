@@ -11,10 +11,10 @@ router.post('/contacto', function(req, res) {
   // se puede usar tambien req.params; o req.param("nombre");
   console.log(req.body.nombre);
   if(req.body.nombre.length > 1){
-  	res.render('contacto', { guardado: true });
+  	res.json({ guardado: true });
   }
   else{
-  	res.render('contacto', { guardado: false });
+  	res.json({ guardado: false });
   }
 });
 

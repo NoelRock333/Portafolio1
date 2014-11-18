@@ -32,4 +32,20 @@ $(document).on('ready', function(){
     });
 /* ---- FIN Creador de barras de habilidad  ---- */
 
+
+/* ---- Atrapando el evento submit del formulario ---- */
+    $("#contacto form").on("submit", function(){
+        $.ajax({
+            url: $(this).attr("action"),
+            type: "POST",
+            dataType: "JSON",
+            data: $(this).serialize(),
+            success: function(respuesta){
+                alert(respuesta.guardado);
+            }
+        });
+        return false;
+    });
+/* ---- Fin de Atrapando el evento submit del formulario ---- */
+
 });
