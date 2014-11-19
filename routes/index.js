@@ -18,4 +18,9 @@ router.post('/contacto', function(req, res) {
   }
 });
 
+/* GET ejemplo de media quieries. */
+router.get('/mediaqueries', function(req, res) {
+  res.render('mediaqueries');
+});
+
 module.exports = router;
