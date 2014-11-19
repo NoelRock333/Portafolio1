@@ -23,4 +23,10 @@ router.get('/mediaqueries', function(req, res) {
   res.render('mediaqueries');
 });
 
+
+/* GET ejemplos javascript. */
+router.get('/javascript', function(req, res) {
+  res.render('javascript');
+});
+
 module.exports = router;

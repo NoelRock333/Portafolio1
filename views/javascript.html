@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<title>Contacto</title>
+	<link rel="stylesheet" href="stylesheets/style.css">
+</head>
+<body>
+	<input type="button" value="MiBoton" id="boton">
+	<!--<script src="javascripts/jquery-1.11.1.min.js"></script>-->
+	<script>
+		/*** 
+		var evento = "load";
+		var funcion = function(){
+			alert("Me acaban de llamar");
+		}
+
+		function atachar(objeto, evento, funcion){
+			objeto.attachEvent ?
+				objeto.attachEvent("on" + evento, funcion) : objeto.addEventListener(evento, funcion);
+		}
+
+		atachar(window, evento, funcion);
+		***/
+
+		/*var f = document.getElementById("boton");
+		atachar(f, "click", funcion);*/
+
+		// $("#boton").on(evento, funcion); //Solo funciona teniendo jQuery agregado
+		
+
+		window.addEventListener ?
+			console.log("Estoy en Chrome, Firefox u Opera") : console.log("Estoy en Internet Explorer");
+	</script>
+</body>
+</html>
